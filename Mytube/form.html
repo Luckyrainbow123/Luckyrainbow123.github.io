@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Upload New Video</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96"/>
+        <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+        <link rel="shortcut icon" href="/assets/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+        <link rel="manifest" href="/assets/site.webmanifest" />
+    </head>
+    <body>
+        <nav>
+            <a href="./mytubehome.html">MyTube Home</a> 
+            <a href="./pages/games.html">Games</a> 
+            <a href="./pages/lacrosse.html">Lacrosse</a>
+            <a href="./pages/cooking.html">Cooking</a>
+            <a href="./form.html">Upload Video</a>
+            <a href="/index.html">Portfolio Home Page</a>
+          </nav>
+      <h1>Upload New Video</h1>
+
+      <form action="" method="post">
+        <label for="title"><h3>Video Title</h3>
+            <input type="text" id="title" name="title" size="42" required>
+        </label><br><br>
+
+        <label for="description"><h3>Description</h3>
+            <textarea name="description" id="description" cols="40" rows="10" required></textarea>
+        </label><br><br>
+
+        <label for="video"><h3>Video</h3>
+            <input type="file" name="video" id="video" required>
+        </label><br><br>
+
+        <label for="collection">
+            <select name="collection" id="collection" required>
+                <option value="" selected disabled hidden>Choose Collection</option>
+                <option value="games">Games</option>
+                <option value="lacrosse">Lacrosse</option>
+                <option value="cooking">Cooking</option>
+            </select>
+        </label><br><br>
+
+        <label for="visibility">
+            <input type="radio" id="public" name="visibility" value="public" required>Public
+            <input type="radio" name="visibility" id="private" value="private" required>Private
+        </label><br><br><br><br>
+
+        <label for="submit">
+            <input type="submit" value="Upload Video" required>
+        </label>
+      </form>
+    </body>
+
+    <hr>
+    <footer>&copy; Copyright</footer>
+</html>
