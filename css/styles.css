@@ -15,10 +15,12 @@
   overflow: hidden;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
+  text-decoration: none;
 }
 
 .project-thumb {
@@ -59,13 +61,23 @@
 }
 
 .project-details a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .project-details em {
   color: #666;
   font-style: italic;
 }
+
+.project-card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+
 
 /* Responsive flex behavior for wider screens */
 @media (min-width: 700px) {
