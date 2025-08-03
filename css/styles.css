@@ -111,3 +111,145 @@
   }
 }
 }
+
+body.fancy-body {
+  background-color: #0e0e12;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Name & Role */
+#candidate-name {
+  font-size: 2.5rem;
+  color: #66ffea;
+  text-shadow: 0 0 4px rgba(0, 255, 213, 0.6);
+}
+
+#candidate-desired-role {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #7fffd4;
+  text-shadow: 0 0 3px rgba(0, 255, 213, 0.3);
+  margin-bottom: 1rem;
+}
+
+/* Profile Image */
+#candidate-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px solid #00ffd5;
+  box-shadow: 0 0 10px rgba(0, 255, 213, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+/* Bio Section */
+#about-me {
+  color: #00ffd5;
+  margin-top: 2rem;
+}
+
+.candidate-bio {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.2rem;
+  border-left: 4px solid #00ffd5;
+  border-radius: 6px;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+/* Skills */
+#skills {
+  color: #00ffd5;
+  margin-top: 2rem;
+}
+
+#skills-list {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  box-shadow: inset 0 0 6px #00ffd5;
+  list-style-position: inside;
+  max-width: 700px;
+}
+
+#skills-list li {
+  margin: 0.5rem 0;
+  color: #d1faff;
+}
+
+/* Hobbies */
+#hobbies {
+  color: #00ffd5;
+  margin-top: 2rem;
+}
+
+#hobbies-list {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  box-shadow: inset 0 0 6px #00ffd5;
+  list-style-position: inside;
+  max-width: 700px;
+}
+
+#hobbies-list li {
+  margin: 0.5rem 0;
+  color: #d1faff;
+}
+
+/* Contact Section */
+#contacts {
+  color: #00ffd5;
+  margin-top: 2rem;
+}
+
+.contacts-table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid #333;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #00ffd5;
+}
+
+.contacts-table th,
+.contacts-table td {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 1px solid #222;
+  color: #d9ffff;
+}
+
+.contacts-table a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contacts-table a:hover {
+  color: #00ffd5;
+}
+
+/* Navigation (only if needed) */
+nav {
+  background-color: rgba(0, 255, 213, 0.1);
+  padding: 1rem;
+  border-bottom: 2px solid #00ffd5;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  color: #00ffd5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
