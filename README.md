@@ -40,7 +40,7 @@ You can view the live portfolio here: [luckyrainbow123.github.io](https://luckyr
 
 ## 📫 Contact Me
 
-- Email: [eliwrighht894215@gmail.com](mailto:eliwrighht894215@gmail.com)
+- Email: [eliwright894215@gmail.com](mailto:eliwright894215@gmail.com)
 - LinkedIn: [linkedin.com/in/894215ew](https://www.linkedin.com/in/894215ew)
 - GitHub: [github.com/Luckyrainbow123](https://github.com/Luckyrainbow123)
 
