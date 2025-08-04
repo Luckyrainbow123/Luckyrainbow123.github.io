@@ -1,3 +1,10 @@
+body {
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  font-family: sans-serif;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -117,7 +124,7 @@ body.fancy-body {
   color: #e0e0e0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  padding: 2rem;
+  padding: 0;
 }
 
 /* Name & Role */
@@ -136,13 +143,35 @@ body.fancy-body {
 }
 
 /* Profile Image */
+.image-row {
+  display: flex;
+  gap: 2rem;                  /* slightly smaller gap */
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  max-width: 100vw;
+  padding: 1rem 1rem 2rem;    /* added bottom padding to prevent crop */
+  box-sizing: border-box;
+  overflow-x: hidden;         /* hide horizontal scroll */
+  height: 250px;              /* enough height for image + hover scale */
+}
+
+.side-photo,
 #candidate-image {
-  width: 160px;
-  height: 160px;
+  width: 180px;               /* slightly smaller width */
+  height: 180px;
   border-radius: 50%;
   border: 2px solid #00ffd5;
   box-shadow: 0 0 10px rgba(0, 255, 213, 0.5);
-  margin-bottom: 1.5rem;
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.side-photo:hover,
+#candidate-image:hover {
+  transform: scale(1.03);     /* smaller scale to avoid cropping */
 }
 
 /* Bio Section */
