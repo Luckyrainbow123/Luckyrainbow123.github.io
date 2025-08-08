@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Level Up Life</title>
+  <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96"/>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+  <link rel="manifest" href="/assets/site.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🏡 Level-Up Life</h1>
+
+    <div class="stats">
+      <p>Level: <span id="level">1</span></p>
+      <p>EXP: <span id="exp">0</span> / <span id="expToNext">50</span></p>
+      <p>🔥 Streak: <span id="streak">0</span> days</p>
+    </div>
+
+    <h2>Do a Chore</h2>
+    <div class="buttons" id="choreButtons"></div>
+
+    <div class="milestone" id="milestone"></div>
+
+    <h2>🎨 Custom Chores</h2>
+    <input id="choreName" placeholder="Chore name" />
+    <input id="choreExp" type="number" placeholder="EXP" />
+    <button onclick="addCustomChore()">Add Chore</button>
+
+    <div id="customChores"></div>
+
+    <h2>📈 Stats Dashboard</h2>
+    <div class="dashboard">
+      <p>Total EXP Earned: <span id="totalExp">0</span></p>
+      <p>Total Chores Completed: <span id="totalChores">0</span></p>
+      <p>Longest Streak: <span id="maxStreak">0</span> days</p>
+    </div>
+
+    <h2>🌞 Daily Quests</h2>
+    <ul id="dailyQuests"></ul>
+
+    <h2>🏅 Achievements</h2>
+    <ul id="badgesList"></ul>
+
+    <h2>🏅 Prestige</h2>
+    <p>Prestige Level: <span id="prestigeLevel">0</span></p>
+    <button id="prestigeBtn" onclick="prestige()" style="display: none;">Prestige Now</button>
+    <p id="prestigeMessage" class="milestone"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
