@@ -289,6 +289,29 @@ function loadData() {
   expToNext = getExpToNext(level);
 }
 
+
+// Floating Home button
+const homeButton = document.createElement("button");
+homeButton.innerText = "🏠 Home";
+homeButton.style.position = "fixed";
+homeButton.style.bottom = "10px";
+homeButton.style.right = "10px";
+homeButton.style.padding = "10px 15px";
+homeButton.style.borderRadius = "12px";
+homeButton.style.border = "none";
+homeButton.style.backgroundColor = "#4CAF50";
+homeButton.style.color = "white";
+homeButton.style.fontSize = "16px";
+homeButton.style.boxShadow = "0 4px 6px rgba(0,0,0,0.2)";
+homeButton.style.cursor = "pointer";
+homeButton.style.zIndex = "1000";
+
+homeButton.addEventListener("click", () => {
+    window.location.href = "/index.html";
+});
+
+document.body.appendChild(homeButton);
+
 // --- INIT ---
 loadData();
 resetDailyQuestsIfNeeded();
