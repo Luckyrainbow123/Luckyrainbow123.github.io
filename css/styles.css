@@ -103,9 +103,9 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-	.project-card-learned p {
-		color: #ffffff;
-	}
+  .project-card-learned p {
+    color: #fff; /* dark mode */
+  }
 }
 /* Responsive override */
 @media (min-width: 700px) {
