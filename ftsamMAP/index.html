@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cemetery Map Tracker</title>
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Fort Sam Houston Cemetery - Section Tracker</h1>
+
+    <div class="controls">
+       <div class="color-buttons">
+    <button class="color-btn selected" data-color="#00ff00" style="background:#00ff00;"></button>
+    <button class="color-btn" data-color="#ff0000" style="background:#ff0000;"></button>
+    <button class="color-btn" data-color="#0000ff" style="background:#0000ff;"></button>
+    <button class="color-btn" data-color="#ffff00" style="background:#ffff00;"></button>
+    <button class="color-btn" data-color="#ff8800" style="background:#ff8800;"></button>
+    <button class="color-btn" data-color="#00ffff" style="background:#00ffff;"></button>
+    <button class="color-btn" data-color="#ffffff" style="background:#ffffff; border:1px solid #ccc;"></button>
+</div>
+
+
+        <button id="resetBtn">Reset Map</button>
+    </div>
+
+    <div id="map-container">
+        <svg id="cemeteryMap" viewBox="0 0 1200 800">
+            <image href="../assets/images/ftsamnatcemMAP.jpg"
+                   x="0" y="0" width="1200" height="800"
+                   preserveAspectRatio="xMidYMid meet" />
+            <!-- Temporary grid (toggleable, non-interactive) -->
+<g id="debug-grid" pointer-events="none" stroke="#00000022" stroke-width="1">
+</g>
+       
+            <path id= "2S" opacity="0.5" d="
+            M 115 160
+            H 150
+            L 160 158
+            V 138
+            H 126
+            "/>
+            <path id="PC" opacity="0.5" d="
+            M 160 138
+            H 191
+            V 157
+            L 160 158"
+            />
+            <path id="PF" opacity="0.5" d="
+            M 191 138
+            H 224
+            V 157
+            L 191 157
+            "/>
+            <path id="PI" opacity="0.5" d="
+            M224 138
+            H 254
+            V 157
+            L 224 157"
+            />
+            <path id="O" opacity="0.5" d="
+            M 256 138
+            H 282
+            V 156
+            L 256 157"
+            />
+            <path id="U" opacity="0.5" d="
+            M 282 138
+            H 303
+            V 156
+            L 282 156"
+            />
+            <path id="Y" opacity="0.5" d="
+            M 303 138
+            L 390 137
+            V 155
+            L 303 156"
+            />
+            <path id="2C" opacity="0.5" d="
+            M 390 137
+            H 427
+            L 431 143
+            V 155
+            L 390 155"
+            />
+            <path id="2B" opacity="0.5" d="
+            M 431 155
+            V 217
+            H 396.5
+            V 162
+            Q 405 158 398 155"
+            />
+            <path id="X" opacity="0.5" d="
+            M 309 161
+            H 391
+            V 217
+            H 309"
+            />
+            <path id="T" opacity="0.5" d="
+            M 304 161.5
+            H 283
+            V 184
+            H 304"
+            />
+            <path id="N" opacity="0.5" d="
+            M 256 161.5
+            H 283
+            V 184
+            H 256"/>
+            <path id="PH" opacity="0.5" d="
+            M 223 161.5
+            H 254
+            V 184
+            H 223"/>
+            <path id="PE" opacity="0.5" d="
+            M 192 163
+            H 217
+            V 184
+            H 192"/>
+            <path id="PB" opacity="0.5" d="
+            M 161 162
+            Q 184 161 186 184
+            H 161"/>
+            <path id="AB" opacity="0.5" d="
+            M 192 163
+            "
+            <!-- Your polygons go here -->
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
